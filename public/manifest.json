@@ -1,25 +1,13 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "manifest_version": 3,
+  "name": "Fun extension",
+  "description": "Your custom Youtube Playlist",
+  "version": "1.0.0",
+  "icons": {
+    "256": "/icons/music-logo.png"
+  },
+  "action": {
+    "default_icon": "/icons/music-logo.png",
+    "default_popup": "index.html"
+  }
 }
