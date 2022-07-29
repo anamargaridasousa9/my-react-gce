@@ -1,0 +1,53 @@
+.popup__font {
+  font-family: "Verdana", sans-serif;
+}
+
+.popup__header {
+  background-color: #121212;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border-bottom: 3px solid #b22222;
+}
+
+.popup__header__icon {
+  height: 20px;
+  margin-left: 10px;
+  opacity: 0.85;
+}
+
+.popup__header__icon:hover {
+  opacity: 1;
+}
+
+.popup__body {
+  height: 350px; /* Setting the height of the body - Remember the total height cannot be over the 600px as mentioned above */
+  overflow-y: auto;
+  background-color: #202020;
+  padding: 1rem;
+}
+
+.popup__body__list {
+  background-color: #3a3b3c;
+  color: white;
+  width: 100%;
+}
+
+.popup__body__logo {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.popup__footer {
+  background-color: #121212;
+  color: white;
+  font-size: 10px;
+  padding: 5px;
+  border-top: 3px solid #b22222;
+}
+
+/* Scroolbar */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 5px;
+}
