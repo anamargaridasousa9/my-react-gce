@@ -9,5 +9,34 @@
   "action": {
     "default_icon": "/icons/music-logo.png",
     "default_popup": "index.html"
-  }
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+      "service_worker": "background.js"
+  },
+  "permissions": [
+      "tabs", "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "/icons/music-logo.png"
+      ],
+      "matches": [
+        "https://www.youtube.com/*"
+      ]
+    }
+  ]
 }
