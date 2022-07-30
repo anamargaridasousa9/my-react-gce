@@ -2,12 +2,14 @@
 /*global chrome*/
 
 import ReactDOM from "react-dom";
+import AddToPlayList from "../components/content";
 
 const ELEMENT_TYPE = "div";
 const ELEMENT_ID = "fun-gce";
 const PLAYER_ADS_ID = "player-ads";
 
 let hasElement = false;
+const musicLogoDir = "/icons/music-logo.png";
 
 const messagesFromBackground = (message, sender, sendResponse) => {
   if (message && message.sender === "background") {
@@ -60,12 +62,9 @@ const injectElement = (youtubeElem, url) => {
   let parentElem = youtubeElem.parentElement;
   if (parentElem) parentElem.prepend(app);
 
-  ReactDOM.render(
-    <div style={{ backgroundColor: "#b22222", padding: "15px" }}>
-      The extension content is here!
-    </div>,
-    app
-  );
+  const musicLogoSrc = chrome.runtime.getURL(musicLogoDir);
+
+  ReactDOM.render(<AddToPlayList musicLogo={musicLogoSrc} url={url} />, app);
 
   hasElement = true;
 };
