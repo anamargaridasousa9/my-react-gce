@@ -20,7 +20,7 @@ changeTabsListener();
 
 const checkUrlMatchesYoutubePage = (curUrl, tabId) => {
   const matchUrl =
-    /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$/;
+    /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w-]+\?v=|embed\/|v\/)?)([\w-]+)(\S+)?$/;
 
   if (matchUrl.test(curUrl)) {
     sendMessageToContent(tabId, curUrl);
