@@ -18,13 +18,7 @@ function FunPopup() {
         </ul>
       </div>
       <div id="fun-footer">
-        <a
-          href="https://www.notion.so/React-Google-Chrome-Extension-for-beginners-or-not-Onboarding-92da8245f8234e1bb44abf7a6e90405c"
-          target="_blank"
-          rel="noreferrer"
-        >
-          React GCE Tutorial 2021
-        </a>
+        React GCE Tutorial 2023
       </div>
     </div>
   );
