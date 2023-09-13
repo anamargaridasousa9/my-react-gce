@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Fun extension",
-  "description": "Your custom Youtube Playlist",
+  "description": "Your custom YouTube Playlist",
   "version": "1.0.0",
   "icons": {
     "256": "/icons/music-logo.png"

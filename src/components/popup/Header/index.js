@@ -6,11 +6,11 @@ const Header = () => {
 
   return (
     <div className="popup__header d-flex">
-      <div className="me-auto">My Youtube Playlist</div>
+      <div className="me-auto">My YouTube Playlist</div>
 
       <div>
         <a
-          href="https://romantic-fibula-b7b.notion.site/React-Google-Chrome-Extension-for-beginners-or-not-Final-df8567b3dc774744aff44385a18c289a"
+          href="https://medium.com/runtime-revolution/react-google-chrome-extension-for-beginners-or-not-part-i-a5cd6d9f2e40"
           target="_blank"
           rel="noreferrer"
         >
