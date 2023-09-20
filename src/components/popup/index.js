@@ -4,7 +4,7 @@ function FunPopup() {
   return (
     <div>
       <div id="fun-header">
-        <h1>My youtube playlist</h1>
+        <h1>My YouTube playlist</h1>
       </div>
       <div id="fun-body">
         <ul>
